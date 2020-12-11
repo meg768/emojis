@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+//var fs = require('fs');
+ctx.font = "200px Arial";
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.fillText("😉", canvas.width / 2, canvas.height / 2);
+
+/*
+const out = fs.createWriteStream(__dirname + '/test.png');
+const stream = canvas.createPNGStream();
+stream.pipe(out);
+
+out.on('finish', () =>  console.log('The PNG file was created.'));
+*/
+</script>
+
+</body>
+</html>
